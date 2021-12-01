@@ -1,6 +1,5 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -9,6 +8,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -41,6 +45,10 @@ body {
     text-decoration: none;
 }
 
+.header-nav a:hover {
+    color:#FFC725;
+}
+
 .header-nav a::after {
     content: '';
     width: 100%;
@@ -61,6 +69,7 @@ body {
     border:none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 
 .button-item {
@@ -113,10 +122,19 @@ body {
     text-decoration: none;
 }
 
+.breadcrumbs a:hover {
+    color:#FFC725;
+}
+
 .breadcrumbs a::before {
     content: '/';
     position: relative;
     left: -7px;
+    pointer-events: none;
+}
+
+.breadcrumbs a:hover::before {
+    color:#DEDEDE;
 }
 
 .breadcrumbs li:first-child a::before {
