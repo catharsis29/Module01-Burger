@@ -198,6 +198,8 @@ header {
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 18px;
+    margin-top: 0;
+    max-width: 353px;
 }
 
 .banner-link {
