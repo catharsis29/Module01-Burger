@@ -272,6 +272,7 @@ header {
     transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .menu-grid-btn:hover {
+    cursor:pointer;
     background-color: #F37335;
     transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
