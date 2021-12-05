@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.6%;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -178,13 +184,17 @@ header {
     font-weight: 700;
     font-size: 14px;
     background-color: #FBB731;
-    padding: 19px 25px;
+    padding: 18px 25px;
     border-radius: 5px;
-    transition: 1s cubic-bezier(1,.02,1,1.18);
+    border:1px solid #FBB731;
+    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
+    transition: background-color 0.4s cubic-bezier(1,.02,1,1.18);
 }
 .banner-link:hover {
-    color: #FAF9F9;
-    transition: 1s cubic-bezier(1,.02,1,1.18);
+    color: #FBB731;
+    background-color: transparent;
+    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
+    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .menu-header {
     display: flex;
@@ -257,6 +267,11 @@ header {
     justify-content: center;
     margin:0 auto;
     gap: 9px;
+    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
+}
+.menu-grid-btn:hover {
+    background-color: #F37335;
+    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .menu-grid-icon {
     display: block;
@@ -283,6 +298,9 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left:-49px;
+    top: 1px;
 }
 .footer-logo {
     width: 63px;
@@ -298,7 +316,7 @@ header {
     margin-bottom: 22px;
     margin-top: 3px;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -306,10 +324,15 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
+}
+.footer-list a:hover {
+    color: #FBB731;
+    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .footer-item span {
     color: #DEDEDE;
@@ -317,14 +340,20 @@ header {
     font-weight: 400;
     margin-bottom: 3px;
 }
-.footer-tel ul{
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
     font-weight: 900;
 }
-.footer-tel li {
-    margin-bottom: 12px;
+.footer-list-tel a:hover {
+    color: #DEDEDE;
+    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .footer-list {
     padding-left: 0;
