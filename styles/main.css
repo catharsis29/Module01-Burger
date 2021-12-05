@@ -42,9 +42,11 @@ header {
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .header-nav a:hover {
     color:#FFC725;
+    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .header-nav a::after {
     content: '';
