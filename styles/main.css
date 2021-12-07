@@ -42,11 +42,10 @@ header {
     font-size: 20px;
     color: #443737;
     text-decoration: none;
-    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
+    transition: color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .header-nav a:hover {
     color:#FFC725;
-    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .header-nav a::after {
     content: '';
@@ -148,7 +147,7 @@ header {
     background-position:center center;
     background-repeat: no-repeat;
     padding: 100px 100px 120px;
-    margin-bottom: 102px;
+    margin-bottom: 80px;
 }
 .banner-title span {
     display: block;
@@ -190,13 +189,14 @@ header {
     border-radius: 5px;
     border:1px solid #FBB731;
     transition: color 0.4s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.4s cubic-bezier(1,.02,1,1.18);
+    transition: background-color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .banner-link:hover {
     color: #FBB731;
     background-color: transparent;
-    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -270,12 +270,11 @@ header {
     justify-content: center;
     margin:0 auto;
     gap: 9px;
-    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
+    transition: background-color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .menu-grid-btn:hover {
     cursor:pointer;
     background-color: #F37335;
-    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .menu-grid-icon {
     display: block;
@@ -332,11 +331,10 @@ header {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
+    transition: color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .footer-list a:hover {
     color: #FBB731;
-    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .footer-item span {
     color: #DEDEDE;
@@ -354,14 +352,37 @@ header {
     font-size: 20px;
     color: #FBB731;
     font-weight: 800;
+    transition: color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .footer-list-tel a:hover {
     color: #DEDEDE;
-    transition: color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .footer-list {
     padding-left: 0;
     list-style-type: none;
+}
+.button-up {
+    background-color: #FBB731;
+    color: #1E2F40;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+.button-up:hover {
+    background-color: #F37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
 }
 
 /* style INDEX */
@@ -419,15 +440,13 @@ header {
     font-size: 14px;
     font-weight: 700;
     border:1px solid #FBB731;
-    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
+    transition: color 0.3s cubic-bezier(1,.02,1,1.18);
+    transition: background-color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .content-link:hover,
 .promo a:hover {
     color: #FBB731;
     background-color: transparent;
-    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.5s cubic-bezier(1,.02,1,1.18);
 }
 .visual{
     flex-grow: 1;
