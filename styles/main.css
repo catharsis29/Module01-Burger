@@ -144,7 +144,7 @@ header {
 .banner-box {
     background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position:center center;
+    background-position: 0 center;
     background-repeat: no-repeat;
     padding: 100px 100px 120px;
     margin-bottom: 80px;
@@ -521,4 +521,34 @@ header {
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
 }
