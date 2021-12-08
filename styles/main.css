@@ -188,8 +188,7 @@ header {
     padding: 18px 25px;
     border-radius: 5px;
     border:1px solid #FBB731;
-    transition: color 0.4s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.3s cubic-bezier(1,.02,1,1.18);
+    transition: color 0.4s cubic-bezier(1,.02,1,1.18), background-color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .banner-link:hover {
     color: #FBB731;
@@ -440,8 +439,7 @@ header {
     font-size: 14px;
     font-weight: 700;
     border:1px solid #FBB731;
-    transition: color 0.3s cubic-bezier(1,.02,1,1.18);
-    transition: background-color 0.3s cubic-bezier(1,.02,1,1.18);
+    transition: color 0.3s cubic-bezier(1,.02,1,1.18), background-color 0.3s cubic-bezier(1,.02,1,1.18);
 }
 .content-link:hover,
 .promo a:hover {
