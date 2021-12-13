@@ -523,18 +523,46 @@ header {
 
 /* modal */
 .burger {
-    background-color:transparent;
-    background-image: url(../images/Menu-burger.svg);
-    background-repeat: no-repeat;
     width: 34px;
     height: 22px;
+    background-image: url(../images/Menu-burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:transparent;
     border: none;
     cursor: pointer;
 }
 #modal {
+    background-color: #FFF8DC;
     max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing:border-box;
 }
-
+#modal .header-nav {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.burger-close {
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/close-x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 /* Responsive */
 
 @media (min-width: 1001px) {
